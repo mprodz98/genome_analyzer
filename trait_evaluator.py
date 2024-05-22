@@ -7,10 +7,12 @@ def read_dna_file(file_path):
     with open(file_path, 'r') as dna_file:
         reader = csv.reader(dna_file, delimiter='\t')
         for row in reader:
+            print(row)
             # Skip the header line if present
             if row[0].startswith('#') or row[0] == 'rsid':
                 continue
-            rsid, chromosome, position, genotype = row
+            rsid, chromosome, position, allele1, allele2 = row
+            genotype = allele1 + allele2
             snp_data[rsid] = genotype
     return snp_data
 
@@ -45,8 +47,8 @@ def evaluate_traits(dna_data, traits_info):
 
 
 def main():
-    dna_file_path = "path_to_your_dna_file.txt"  # Provide the path to the DNA file
-    traits_file_path = "path_to_your_traits_info_file.csv"  # Provide the path to the traits information file
+    dna_file_path = "AncestryDNA.txt"  # Provide the path to the DNA file
+    traits_file_path = "traits_snp_info.csv"  # Provide the path to the traits information file
 
     # Read the DNA file and load the SNP data
     dna_data = read_dna_file(dna_file_path)
