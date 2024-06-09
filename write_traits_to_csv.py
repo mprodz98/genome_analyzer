@@ -41,6 +41,10 @@ traits_snp_info = [
      'impact': 'Increased caffeine metabolism'},
     {'trait': 'Caffeine consumption', 'rsid': 'rs667788', 'reference_allele': 'C', 'effect_allele': 'A',
      'impact': 'Decreased sensitivity to caffeine'},
+    {'trait': 'Caffeine consumption', 'rsid': 'rs2472297', 'reference_allele': 'C', 'effect_allele': 'T',
+     'impact': 'Higher caffeine consumption'},
+    {'trait': 'Caffeine consumption', 'rsid': 'rs762551', 'reference_allele': 'A', 'effect_allele': 'C',
+     'impact': 'Faster caffeine metabolism'},
 
     # Cilantro/coriander preference
     {'trait': 'Cilantro/coriander preference', 'rsid': 'rs282930', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -51,6 +55,8 @@ traits_snp_info = [
      'impact': 'Dislike of cilantro taste'},
     {'trait': 'Cilantro/coriander preference', 'rsid': 'rs373839', 'reference_allele': 'G', 'effect_allele': 'A',
      'impact': 'Enjoyment of cilantro flavor'},
+    {'trait': 'Cilantro preference', 'rsid': 'rs72921001', 'reference_allele': 'C', 'effect_allele': 'T',
+     'impact': 'Cilantro aversion'},
 
     # Magnesium levels
     {'trait': 'Magnesium levels', 'rsid': 'rs404142', 'reference_allele': 'A', 'effect_allele': 'C',
@@ -61,6 +67,8 @@ traits_snp_info = [
      'impact': 'Increased magnesium absorption'},
     {'trait': 'Magnesium levels', 'rsid': 'rs484950', 'reference_allele': 'A', 'effect_allele': 'G',
      'impact': 'Decreased magnesium retention'},
+    {'trait': 'Magnesium levels', 'rsid': 'rs11144134', 'reference_allele': 'G', 'effect_allele': 'A',
+     'impact': 'Higher serum magnesium'},
 
     # Vitamin B12 and folate
     {'trait': 'Vitamin B12 and folate', 'rsid': 'rs505152', 'reference_allele': 'T', 'effect_allele': 'C',
@@ -71,6 +79,10 @@ traits_snp_info = [
      'impact': 'Improved folate metabolism'},
     {'trait': 'Vitamin B12 and folate', 'rsid': 'rs595960', 'reference_allele': 'G', 'effect_allele': 'A',
      'impact': 'Reduced vitamin B12 absorption'},
+    {'trait': 'Vitamin B12 levels', 'rsid': 'rs602662', 'reference_allele': 'G', 'effect_allele': 'A',
+     'impact': 'Lower serum vitamin B12'},
+    {'trait': 'Folate levels', 'rsid': 'rs1801133', 'reference_allele': 'C', 'effect_allele': 'T',
+     'impact': 'Reduced folate levels'},
 
     # Lactose intolerance
     {'trait': 'Lactose intolerance', 'rsid': 'rs616263', 'reference_allele': 'G', 'effect_allele': 'A',
@@ -81,6 +93,8 @@ traits_snp_info = [
      'impact': 'Decreased lactase production'},
     {'trait': 'Lactose intolerance', 'rsid': 'rs707172', 'reference_allele': 'T', 'effect_allele': 'C',
      'impact': 'Increased lactase persistence'},
+    {'trait': 'Lactose intolerance', 'rsid': 'rs4988235', 'reference_allele': 'G', 'effect_allele': 'A',
+     'impact': 'Lactose tolerance'},
 
     # Osteoporosis
     {'trait': 'Osteoporosis', 'rsid': 'rs737475', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -91,6 +105,8 @@ traits_snp_info = [
      'impact': 'Reduced bone density'},
     {'trait': 'Osteoporosis', 'rsid': 'rs828384', 'reference_allele': 'T', 'effect_allele': 'G',
      'impact': 'Enhanced bone strength'},
+    {'trait': 'Osteoporosis', 'rsid': 'rs3736228', 'reference_allele': 'C', 'effect_allele': 'T',
+     'impact': 'Increased risk of osteoporosis'},
 
     # Sleep duration
     {'trait': 'Sleep duration', 'rsid': 'rs858687', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -101,6 +117,8 @@ traits_snp_info = [
      'impact': 'Shortened sleep cycles'},
     {'trait': 'Sleep duration', 'rsid': 'rs949596', 'reference_allele': 'G', 'effect_allele': 'A',
      'impact': 'Extended sleep periods'},
+    {'trait': 'Sleep duration', 'rsid': 'rs5569', 'reference_allele': 'C', 'effect_allele': 'T',
+     'impact': 'Shorter sleep duration'},
 
     # Attention span
     {'trait': 'Attention span', 'rsid': 'rs979899', 'reference_allele': 'A', 'effect_allele': 'G',
@@ -111,6 +129,8 @@ traits_snp_info = [
      'impact': 'Improved focus'},
     {'trait': 'Attention span', 'rsid': 'rs105106', 'reference_allele': 'T', 'effect_allele': 'C',
      'impact': 'Reduced distractibility'},
+    {'trait': 'Attention span', 'rsid': 'rs7171755', 'reference_allele': 'G', 'effect_allele': 'A',
+     'impact': 'Reduced attention span'},
 
     # Working memory
     {'trait': 'Working memory', 'rsid': 'rs107108', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -121,6 +141,8 @@ traits_snp_info = [
      'impact': 'Better cognitive flexibility'},
     {'trait': 'Working memory', 'rsid': 'rs113114', 'reference_allele': 'T', 'effect_allele': 'G',
      'impact': 'Poorer short-term memory'},
+    {'trait': 'Working memory', 'rsid': 'rs4680', 'reference_allele': 'G', 'effect_allele': 'A',
+     'impact': 'Improved working memory'},
 
     # Glaucoma risk
     {'trait': 'Glaucoma risk', 'rsid': 'rs115116', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -131,6 +153,8 @@ traits_snp_info = [
      'impact': 'Higher intraocular pressure'},
     {'trait': 'Glaucoma risk', 'rsid': 'rs121122', 'reference_allele': 'T', 'effect_allele': 'G',
      'impact': 'Lower intraocular pressure'},
+    {'trait': 'Glaucoma risk', 'rsid': 'rs10483727', 'reference_allele': 'T', 'effect_allele': 'C',
+     'impact': 'Increased risk of glaucoma'},
 
     # Alcohol sensitivity
     {'trait': 'Alcohol sensitivity', 'rsid': 'rs123124', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -141,6 +165,8 @@ traits_snp_info = [
      'impact': 'Higher alcohol tolerance'},
     {'trait': 'Alcohol sensitivity', 'rsid': 'rs129130', 'reference_allele': 'T', 'effect_allele': 'G',
      'impact': 'Lower alcohol tolerance'},
+    {'trait': 'Alcohol sensitivity', 'rsid': 'rs671', 'reference_allele': 'A', 'effect_allele': 'G',
+     'impact': 'Increased alcohol sensitivity'},
 
     # Pain sensitivity
     {'trait': 'Pain sensitivity', 'rsid': 'rs131132', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -151,6 +177,8 @@ traits_snp_info = [
      'impact': 'Increased pain threshold'},
     {'trait': 'Pain sensitivity', 'rsid': 'rs137138', 'reference_allele': 'T', 'effect_allele': 'G',
      'impact': 'Decreased pain threshold'},
+    {'trait': 'Pain sensitivity', 'rsid': 'rs4680', 'reference_allele': 'G', 'effect_allele': 'A',
+     'impact': 'Decreased pain sensitivity'},
 
     # Testosterone levels
     {'trait': 'Testosterone levels', 'rsid': 'rs139140', 'reference_allele': 'C', 'effect_allele': 'T',
@@ -161,36 +189,6 @@ traits_snp_info = [
      'impact': 'Increased androgen production'},
     {'trait': 'Testosterone levels', 'rsid': 'rs145146', 'reference_allele': 'T', 'effect_allele': 'G',
      'impact': 'Decreased androgen production'},
-
-    # More traits from previous list
-    {'trait': 'Caffeine consumption', 'rsid': 'rs2472297', 'reference_allele': 'C', 'effect_allele': 'T',
-     'impact': 'Higher caffeine consumption'},
-    {'trait': 'Caffeine consumption', 'rsid': 'rs762551', 'reference_allele': 'A', 'effect_allele': 'C',
-     'impact': 'Faster caffeine metabolism'},
-    {'trait': 'Cilantro preference', 'rsid': 'rs72921001', 'reference_allele': 'C', 'effect_allele': 'T',
-     'impact': 'Cilantro aversion'},
-    {'trait': 'Lactose intolerance', 'rsid': 'rs4988235', 'reference_allele': 'G', 'effect_allele': 'A',
-     'impact': 'Lactose tolerance'},
-    {'trait': 'Magnesium levels', 'rsid': 'rs11144134', 'reference_allele': 'G', 'effect_allele': 'A',
-     'impact': 'Higher serum magnesium'},
-    {'trait': 'Vitamin B12 levels', 'rsid': 'rs602662', 'reference_allele': 'G', 'effect_allele': 'A',
-     'impact': 'Lower serum vitamin B12'},
-    {'trait': 'Folate levels', 'rsid': 'rs1801133', 'reference_allele': 'C', 'effect_allele': 'T',
-     'impact': 'Reduced folate levels'},
-    {'trait': 'Osteoporosis', 'rsid': 'rs3736228', 'reference_allele': 'C', 'effect_allele': 'T',
-     'impact': 'Increased risk of osteoporosis'},
-    {'trait': 'Sleep duration', 'rsid': 'rs5569', 'reference_allele': 'C', 'effect_allele': 'T',
-     'impact': 'Shorter sleep duration'},
-    {'trait': 'Attention span', 'rsid': 'rs7171755', 'reference_allele': 'G', 'effect_allele': 'A',
-     'impact': 'Reduced attention span'},
-    {'trait': 'Working memory', 'rsid': 'rs4680', 'reference_allele': 'G', 'effect_allele': 'A',
-     'impact': 'Improved working memory'},
-    {'trait': 'Glaucoma risk', 'rsid': 'rs10483727', 'reference_allele': 'T', 'effect_allele': 'C',
-     'impact': 'Increased risk of glaucoma'},
-    {'trait': 'Alcohol sensitivity', 'rsid': 'rs671', 'reference_allele': 'A', 'effect_allele': 'G',
-     'impact': 'Increased alcohol sensitivity'},
-    {'trait': 'Pain sensitivity', 'rsid': 'rs4680', 'reference_allele': 'G', 'effect_allele': 'A',
-     'impact': 'Decreased pain sensitivity'},
     {'trait': 'Testosterone levels', 'rsid': 'rs5934505', 'reference_allele': 'A', 'effect_allele': 'G',
      'impact': 'Lower testosterone levels'}
 ]

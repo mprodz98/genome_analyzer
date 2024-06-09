@@ -1,13 +1,13 @@
 import csv
+from argparse import ArgumentParser
 
 
-def read_dna_file(file_path):
+def read_dna_file(file_path: str) -> dict:
     """Read the raw DNA file and store SNP data in a dictionary."""
     snp_data = {}
     with open(file_path, 'r') as dna_file:
         reader = csv.reader(dna_file, delimiter='\t')
         for row in reader:
-            print(row)
             # Skip the header line if present
             if row[0].startswith('#') or row[0] == 'rsid':
                 continue
@@ -17,7 +17,7 @@ def read_dna_file(file_path):
     return snp_data
 
 
-def load_traits_information(traits_file):
+def load_traits_information(traits_file: str) -> dict:
     """Load genetic markers and traits information from a file."""
     traits_info = {}
     with open(traits_file, 'r') as file:
@@ -30,7 +30,7 @@ def load_traits_information(traits_file):
     return traits_info
 
 
-def evaluate_traits(dna_data, traits_info):
+def evaluate_traits(dna_data: dict, traits_info: dict ):
     """Evaluate traits based on DNA data and traits information."""
     trait_evaluations = {}
     for trait, markers in traits_info.items():
@@ -47,7 +47,10 @@ def evaluate_traits(dna_data, traits_info):
 
 
 def main():
-    dna_file_path = "AncestryDNA.txt"  # Provide the path to the DNA file
+    parser = ArgumentParser()
+    parser.add_argument('--dna_file_path', default='AncestryDNA.txt')
+    args = parser.parse_args()
+    dna_file_path: str = args.dna_file_path
     traits_file_path = "traits_snp_info.csv"  # Provide the path to the traits information file
 
     # Read the DNA file and load the SNP data
