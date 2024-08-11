@@ -1,6 +1,8 @@
 import csv
 from argparse import ArgumentParser
 
+from write_traits_to_csv import ancestry_snps
+
 
 def read_dna_file(file_path: str) -> dict:
     """Read the raw DNA file and store SNP data in a dictionary."""
@@ -70,6 +72,50 @@ def estimate_height(rsid_data, rsid_effects):
     return estimated_height
 
 
+def estimate_heritage(rsid_data):
+    """
+    Estimate the heritage of an individual based on their DNA data.
+
+    Parameters:
+    rsid_data (dict): A dictionary where keys are rsids and values are the individual's genotype (e.g., 'AA', 'AG', 'GG').
+
+    Returns:
+    dict: A dictionary with estimated ancestry proportions.
+    """
+
+    ancestry_count = {
+        'European': 0,
+        'African': 0,
+        'Asian': 0,
+        'East Asian': 0,
+        'South Asian': 0,
+        'Native American': 0,
+        'Middle Eastern': 0,
+        'Oceanian': 0,
+        'Other': 0
+    }
+
+    for snp in ancestry_snps:
+        ancestry_rsid = snp['rsid']
+        for rsid_user, effect_allele, impact in rsid_data:
+            if ancestry_rsid == rsid_user:
+                genotype = effect_allele
+                if snp['effect_allele'] in genotype:
+                    ancestry = snp['impact'].split(' Ancestry')[0]
+                    if ancestry in ancestry_count:
+                        ancestry_count[ancestry] += 1
+                    else:
+                        ancestry_count['Other'] += 1
+
+    # Calculate the proportions of each ancestry
+    total_snps = sum(ancestry_count.values())
+    if total_snps > 0:
+        for key in ancestry_count:
+            ancestry_count[key] = round(ancestry_count[key] / total_snps * 100, 2)
+
+    return ancestry_count
+
+
 def main():
     parser = ArgumentParser()
     parser.add_argument('--dna_file_path', default='AncestryDNA.txt')
@@ -134,8 +180,9 @@ def main():
         'rs1149944': -1.1  # Decreased height
     }
 
+    print(f"Height estimate(cm): {estimate_height(trait_evaluations['Height'], height_effects)}")
+    print(f"Heritage Estimate: {estimate_heritage(trait_evaluations['Ancestry'])}")
 
-    print(estimate_height(trait_evaluations["Height"], height_effects))
 
 if __name__ == '__main__':
     main()

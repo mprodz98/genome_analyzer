@@ -1582,9 +1582,64 @@ traits_snp_info = [
 
     # Myelodysplastic syndrome (MDS)
     {'trait': 'MDS', 'rsid': 'rs2201862', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'Increased risk of MDS'},
-    {'trait': 'MDS', 'rsid': 'rs2019960', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'Decreased risk of MDS'},
+    {'trait': 'MDS', 'rsid': 'rs2019960', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'Decreased risk of MDS'}
 
 ]
+ancestry_snps = [  # Ancestry related data
+    {'trait': 'Ancestry', 'rsid': 'rs1426654', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'European Ancestry (lighter skin pigmentation)'},
+    {'trait': 'Ancestry', 'rsid': 'rs2814778', 'reference_allele': 'G', 'effect_allele': 'T', 'impact': 'African Ancestry (protection against malaria)'},
+    {'trait': 'Ancestry', 'rsid': 'rs3827760', 'reference_allele': 'T', 'effect_allele': 'C', 'impact': 'East Asian Ancestry (reduced beard thickness)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1426654', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'South Asian Ancestry (darker skin pigmentation)'},
+    {'trait': 'Ancestry', 'rsid': 'rs16891982', 'reference_allele': 'G', 'effect_allele': 'C', 'impact': 'European Ancestry (lighter skin pigmentation)'},
+    {'trait': 'Ancestry', 'rsid': 'rs8176719', 'reference_allele': 'A', 'effect_allele': 'T', 'impact': 'African Ancestry (Duffy antigen, malaria resistance)'},
+    {'trait': 'Ancestry', 'rsid': 'rs17376848', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'Native American Ancestry (genetic markers associated with Native American populations)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1042602', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'East Asian Ancestry (lighter skin pigmentation)'},
+    {'trait': 'Ancestry', 'rsid': 'rs312262906', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'Sub-Saharan African Ancestry (genetic markers associated with African populations)'},
+    {'trait': 'Ancestry', 'rsid': 'rs186480016', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'Oceanian Ancestry (genetic markers associated with Oceanian populations)'},
+    {'trait': 'Ancestry', 'rsid': 'rs4988235', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'European Ancestry (lactase persistence, ability to digest lactose)'},
+    {'trait': 'Ancestry', 'rsid': 'rs12913832', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'European Ancestry (blue eye color)'},
+    {'trait': 'Ancestry', 'rsid': 'rs10830963', 'reference_allele': 'G', 'effect_allele': 'C', 'impact': 'East Asian Ancestry (increased risk of type 2 diabetes)'},
+    {'trait': 'Ancestry', 'rsid': 'rs3825942', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'African Ancestry (higher risk of glaucoma)'},
+    {'trait': 'Ancestry', 'rsid': 'rs2470102', 'reference_allele': 'T', 'effect_allele': 'C', 'impact': 'South Asian Ancestry (genetic markers associated with South Asian populations)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1805007', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'European Ancestry (red hair, fair skin)'},
+    {'trait': 'Ancestry', 'rsid': 'rs12203592', 'reference_allele': 'T', 'effect_allele': 'C', 'impact': 'European Ancestry (freckles, fair skin)'},
+    {'trait': 'Ancestry', 'rsid': 'rs7254892', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'East Asian Ancestry (dry earwax type)'},
+    {'trait': 'Ancestry', 'rsid': 'rs312262906', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'Native American Ancestry (genetic markers associated with Native American populations)'},
+    {'trait': 'Ancestry', 'rsid': 'rs121908120', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'Middle Eastern Ancestry (genetic markers associated with Middle Eastern populations)'},
+    {'trait': 'Ancestry', 'rsid': 'rs10774625', 'reference_allele': 'T', 'effect_allele': 'C', 'impact': 'European Ancestry (higher BMI)'},
+    {'trait': 'Ancestry', 'rsid': 'rs4835265', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'African Ancestry (higher bone density)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1834640', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'Asian Ancestry (increased risk of osteoporosis)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1048943', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'East Asian Ancestry (increased risk of lung cancer)'},
+    {'trait': 'Ancestry', 'rsid': 'rs2066847', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'European Ancestry (increased risk of Crohn’s disease)'},
+    {'trait': 'Ancestry', 'rsid': 'rs3829251', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'African Ancestry (reduced risk of Alzheimer’s disease)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1129038', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'European Ancestry (green eye color)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1800414', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'East Asian Ancestry (reduced melanin production)'},
+    {'trait': 'Ancestry', 'rsid': 'rs2228570', 'reference_allele': 'T', 'effect_allele': 'C', 'impact': 'European Ancestry (increased vitamin D absorption)'},
+    {'trait': 'Ancestry', 'rsid': 'rs671', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'East Asian Ancestry (alcohol flush reaction)'},
+    {'trait': 'Ancestry', 'rsid': 'rs7566605', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'African Ancestry (reduced risk of obesity)'},
+    {'trait': 'Ancestry', 'rsid': 'rs3907055', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'European Ancestry (higher risk of celiac disease)'},
+    {'trait': 'Ancestry', 'rsid': 'rs9349379', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'South Asian Ancestry (increased risk of heart disease)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1805008', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'European Ancestry (blond hair, fair skin)'},
+    {'trait': 'Ancestry', 'rsid': 'rs4137525', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'East Asian Ancestry (increased risk of myopia)'},
+    {'trait': 'Ancestry', 'rsid': 'rs6822844', 'reference_allele': 'T', 'effect_allele': 'C', 'impact': 'European Ancestry (increased risk of rheumatoid arthritis)'},
+    {'trait': 'Ancestry', 'rsid': 'rs483080', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'African Ancestry (reduced risk of type 2 diabetes)'},
+    {'trait': 'Ancestry', 'rsid': 'rs12970134', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'European Ancestry (higher waist-to-hip ratio)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1229984', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'European Ancestry (lower alcohol tolerance)'},
+    {'trait': 'Ancestry', 'rsid': 'rs11614913', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'Asian Ancestry (increased risk of breast cancer)'},
+    {'trait': 'Ancestry', 'rsid': 'rs10938397', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'European Ancestry (higher BMI)'},
+    {'trait': 'Ancestry', 'rsid': 'rs7626962', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'African Ancestry (increased bone mineral density)'},
+    {'trait': 'Ancestry', 'rsid': 'rs13107325', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'European Ancestry (higher risk of obesity)'},
+    {'trait': 'Ancestry', 'rsid': 'rs8050136', 'reference_allele': 'A', 'effect_allele': 'C', 'impact': 'African Ancestry (reduced risk of obesity)'},
+    {'trait': 'Ancestry', 'rsid': 'rs17822931', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'East Asian Ancestry (reduced risk of dry earwax)'},
+    {'trait': 'Ancestry', 'rsid': 'rs10883365', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'African Ancestry (reduced risk of prostate cancer)'},
+    {'trait': 'Ancestry', 'rsid': 'rs17822931', 'reference_allele': 'T', 'effect_allele': 'C', 'impact': 'Asian Ancestry (increased risk of dry earwax)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1800407', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'European Ancestry (green or hazel eye color)'},
+    {'trait': 'Ancestry', 'rsid': 'rs6025', 'reference_allele': 'G', 'effect_allele': 'A', 'impact': 'European Ancestry (increased risk of blood clotting)'},
+    {'trait': 'Ancestry', 'rsid': 'rs2073618', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'East Asian Ancestry (increased risk of osteoporosis)'},
+    {'trait': 'Ancestry', 'rsid': 'rs12766939', 'reference_allele': 'A', 'effect_allele': 'G', 'impact': 'African Ancestry (reduced risk of melanoma)'},
+    {'trait': 'Ancestry', 'rsid': 'rs1048943', 'reference_allele': 'C', 'effect_allele': 'T', 'impact': 'East Asian Ancestry (increased risk of lung cancer)'}]
+
+traits_snp_info = traits_snp_info + ancestry_snps
 
 output_csv_file = 'traits_snp_info.csv'
 
