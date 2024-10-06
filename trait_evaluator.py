@@ -86,7 +86,7 @@ def estimate_heritage(rsid_data):
     ancestry_count = {
         "European": 0,
         "African": 0,
-        "Asian": 0,
+        "Asian (No Particular Region)": 0,
         "East Asian": 0,
         "South Asian": 0,
         "Native American": 0,
