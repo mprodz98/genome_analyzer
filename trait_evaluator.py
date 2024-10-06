@@ -133,7 +133,6 @@ def main():
 
     # Evaluate the traits
     trait_evaluations = evaluate_traits(dna_data, traits_info)
-    print(trait_evaluations["Height"])
 
     # Display the results
     for trait, evaluations in trait_evaluations.items():

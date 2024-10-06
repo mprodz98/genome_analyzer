@@ -5979,7 +5979,7 @@ ancestry_snps = [  # Ancestry related data
         "rsid": "rs1834640",
         "reference_allele": "A",
         "effect_allele": "G",
-        "impact": "Asian Ancestry (increased risk of osteoporosis)",
+        "impact": "Asian (No Particular Region) Ancestry (increased risk of osteoporosis)",
     },
     {
         "trait": "Ancestry",
